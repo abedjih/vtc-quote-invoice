@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Application de gestion de devis et factures pour chauffeurs VTC - Installable sur mobile">
+    <title>VTC Gestion - Installation</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            text-align: center;
+        }
+        .icon {
+            font-size: 80px;
+            margin-bottom: 20px;
+        }
+        h1 {
+            color: #1e3a8a;
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+        .subtitle {
+            color: #666;
+            font-size: 1.1em;
+            margin-bottom: 30px;
+        }
+        .features {
+            text-align: left;
+            margin: 30px 0;
+            background: #f0f9ff;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .feature {
+            margin: 15px 0;
+            font-size: 16px;
+            color: #333;
+        }
+        .feature strong {
+            color: #1e3a8a;
+        }
+        .btn {
+            display: inline-block;
+            padding: 15px 40px;
+            margin: 10px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 18px;
+            transition: transform 0.2s;
+        }
+        .btn:hover {
+            transform: translateY(-2px);
+        }
+        .btn-primary {
+            background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+            color: white;
+        }
+        .btn-secondary {
+            background: #f3f4f6;
+            color: #1e3a8a;
+            border: 2px solid #1e3a8a;
+        }
+        .install-instructions {
+            background: #fef3c7;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 30px;
+            border-left: 4px solid #f59e0b;
+            text-align: left;
+        }
+        .install-instructions h3 {
+            color: #92400e;
+            margin-bottom: 10px;
+        }
+        .install-instructions p {
+            color: #78350f;
+            line-height: 1.6;
+        }
+        .badge {
+            display: inline-block;
+            background: #10b981;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 600;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="icon">🚗</div>
+        <h1>VTC Gestion</h1>
+        <p class="subtitle">Devis & Factures Professionnels</p>
+        
+        <div>
+            <span class="badge">100% Gratuit</span>
+            <span class="badge">Installable Mobile</span>
+            <span class="badge">Hors ligne</span>
+        </div>
+
+        <div class="features">
+            <div class="feature">✅ <strong>Autocomplétion d'adresses</strong> en temps réel</div>
+            <div class="feature">✅ <strong>Calcul automatique</strong> de distance et prix</div>
+            <div class="feature">✅ <strong>Devis et factures</strong> professionnels</div>
+            <div class="feature">✅ <strong>Suppléments personnalisables</strong> (nuit, aéroport, péages...)</div>
+            <div class="feature">✅ <strong>Fonctionne hors ligne</strong> (sauf autocomplétion)</div>
+            <div class="feature">✅ <strong>Données stockées localement</strong> (100% privé)</div>
+            <div class="feature">✅ <strong>Installable sur Android et iOS</strong></div>
+        </div>
+
+        <a href="gestion-vtc-pwa.html" class="btn btn-primary">🚀 Lancer l'application</a>
+        <a href="GUIDE_INSTALLATION_MOBILE.md" class="btn btn-secondary" download>📖 Guide d'installation</a>
+
+        <div class="install-instructions" id="androidInstructions" style="display: none;">
+            <h3>📱 Installation sur Android</h3>
+            <p>
+                <strong>1.</strong> Cliquez sur "Lancer l'application" ci-dessus<br>
+                <strong>2.</strong> Un bandeau "Installer" apparaîtra en bas<br>
+                <strong>3.</strong> Ou utilisez le bouton "📱 Installer l'application" en haut de la page<br>
+                <strong>4.</strong> L'icône sera ajoutée à votre écran d'accueil !
+            </p>
+        </div>
+
+        <div class="install-instructions" id="iosInstructions" style="display: none;">
+            <h3>🍎 Installation sur iOS</h3>
+            <p>
+                <strong>1.</strong> Ouvrez cette page dans <strong>Safari</strong> (obligatoire)<br>
+                <strong>2.</strong> Cliquez sur "Lancer l'application" ci-dessus<br>
+                <strong>3.</strong> Appuyez sur le bouton <strong>Partager</strong> 📤<br>
+                <strong>4.</strong> Sélectionnez <strong>"Sur l'écran d'accueil"</strong><br>
+                <strong>5.</strong> Confirmez en cliquant sur <strong>"Ajouter"</strong>
+            </p>
+        </div>
+
+        <div class="install-instructions">
+            <h3>🌐 Aucune inscription requise</h3>
+            <p>
+                Cette application utilise <strong>OpenStreetMap</strong> et <strong>OSRM</strong> - 
+                des services 100% gratuits et open source. Aucune clé API, aucun compte, 
+                aucune carte bancaire. Commencez immédiatement !
+            </p>
+        </div>
+
+        <p style="margin-top: 30px; color: #666; font-size: 14px;">
+            © 2024 VTC Gestion - Application gratuite et open source
+        </p>
+    </div>
+
+    <script>
+        // Détecter le système d'exploitation et afficher les instructions appropriées
+        const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+        
+        if (/android/i.test(userAgent)) {
+            document.getElementById('androidInstructions').style.display = 'block';
+        } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
+            document.getElementById('iosInstructions').style.display = 'block';
+        } else {
+            // Desktop ou autre - afficher les deux
+            document.getElementById('androidInstructions').style.display = 'block';
+            document.getElementById('iosInstructions').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
