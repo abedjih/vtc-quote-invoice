@@ -6,7 +6,7 @@ pipeline {
             steps {
                 // Jenkins fait déjà un checkout automatique,
                 // mais ça permet d’être explicite
-                checkout main
+                checkout scm
             }
         }
 
